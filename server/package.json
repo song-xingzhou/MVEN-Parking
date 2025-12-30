@@ -1,11 +1,12 @@
 {
-  "name": "server-template",
+  "name": "parking-share-server",
   "version": "1.0.0",
-  "description": "Express.js template",
+  "description": "个人停车位共享服务平台 - 后端服务",
   "main": "server.js",
   "scripts": {
     "dev": "node server.js",
     "serve": "nodemon server.js",
+    "db:init": "node helpers/db/init_db.js",
     "format": "prettier server.js **/*.js --write"
   },
   "license": "ISC",
