@@ -23,6 +23,7 @@ app.use(express.static(__dirname + '/views/'));
 
 // Defining route middleware
 app.use('/api', require('./routes/api'));
+app.use('/api/auth', require('./routes/auth'));
 
 // Listening to port
 app.listen(port);
